@@ -1,8 +1,26 @@
+<h4>Córdoba Pablo - Clase 1 - Ejercicio 1</h4>
+
 <div>
-	<input [(ngModel)]="this.ageOne"  type="number" id="EdadUno">
-	<input [(ngModel)]="this.ageTwo" type="number" id="EdadDos">
+	<div>
+		<label for="EdadUno">Edad 1</label>
+		<input [(ngModel)]="this.ageOne"  type="number" id="EdadUno">
+	</div>
+	<div>
+		<label for="EdadDos">Edad 2</label>
+		<input [(ngModel)]="this.ageTwo" type="number" id="EdadDos">
+	</div>
+</div>
+<div>
 	<button (click)="calculateValues()">Calcular</button>
 	<button (click)="resetInputs()">Limpiar</button>
-	<input [(ngModel)]="this.average" readonly type="number" id="Promedio">
-	<input [(ngModel)]="this.sum" readonly type="number" id="Suma">
+</div>
+<div>
+	<div>
+		<label for="Promedio">Promedio</label>
+		<input [(ngModel)]="this.average" readonly type="number" id="Promedio">
+	</div>
+	<div>
+		<label for="Suma">Suma</label>
+		<input [(ngModel)]="this.sum" readonly type="number" id="Suma">
+	</div>
 </div>
